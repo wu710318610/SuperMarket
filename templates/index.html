@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div>
-    {% for i in info %}
-        <span>{{ i.0.address }}</span>
-    {% endfor %}
-    
-</div>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+    首页
+{% endblock %}
+
+{#顶部#}
+{% block page_head %}
+    {% include 'include/top.html' %}
+    {% include 'include/serach.html' %}
+{% endblock %}
+
+{#中间#}
+{% block page_main %}
+
+{% endblock %}
+
+{#尾部#}
+{% block page_footer %}
+
+{% endblock %}
